@@ -1,0 +1,172 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-surface: #faf9f6;
+    --color-surface-bright: #faf9f6;
+    --color-surface-dim: #dbdad7;
+    --color-surface-container-lowest: #ffffff;
+    --color-surface-container-low: #f4f3f1;
+    --color-surface-container: #efeeeb;
+    --color-surface-container-high: #e9e8e5;
+    --color-surface-container-highest: #e3e2e0;
+    --color-surface-variant: #e3e2e0;
+
+    --color-on-surface: #1a1c1a;
+    --color-on-surface-variant: #434655;
+    --color-on-background: #1a1c1a;
+    --color-background: #faf9f6;
+
+    --color-primary: #004ac6;
+    --color-primary-container: #2563eb;
+    --color-on-primary: #ffffff;
+    --color-on-primary-container: #eeefff;
+    --color-primary-fixed: #dbe1ff;
+    --color-primary-fixed-dim: #b4c5ff;
+    --color-on-primary-fixed: #00174b;
+    --color-on-primary-fixed-variant: #003ea8;
+    --color-inverse-primary: #b4c5ff;
+
+    --color-secondary: #5f5e61;
+    --color-secondary-container: #e4e1e6;
+    --color-on-secondary: #ffffff;
+    --color-on-secondary-container: #656467;
+    --color-secondary-fixed: #e4e1e6;
+    --color-secondary-fixed-dim: #c8c5ca;
+    --color-on-secondary-fixed: #1b1b1e;
+    --color-on-secondary-fixed-variant: #47464a;
+
+    --color-tertiary: #54545c;
+    --color-tertiary-container: #6c6c75;
+    --color-on-tertiary: #ffffff;
+    --color-on-tertiary-container: #f0eef9;
+    --color-tertiary-fixed: #e3e1ec;
+    --color-tertiary-fixed-dim: #c6c5cf;
+    --color-on-tertiary-fixed: #1a1b22;
+    --color-on-tertiary-fixed-variant: #46464e;
+
+    --color-outline: #737686;
+    --color-outline-variant: #c3c6d7;
+
+    --color-error: #ba1a1a;
+    --color-error-container: #ffdad6;
+    --color-on-error: #ffffff;
+    --color-on-error-container: #93000a;
+
+    --color-inverse-surface: #2f312f;
+    --color-inverse-on-surface: #f2f1ee;
+  }
+
+  .dark {
+    --color-surface: #141514;
+    --color-surface-bright: #1c1d1c;
+    --color-surface-dim: #101110;
+    --color-surface-container-lowest: #1a1c1a;
+    --color-surface-container-low: #222422;
+    --color-surface-container: #282a28;
+    --color-surface-container-high: #2f322f;
+    --color-surface-container-highest: #383b38;
+    --color-surface-variant: #303330;
+
+    --color-on-surface: #e5e4e1;
+    --color-on-surface-variant: #a2a5b5;
+    --color-on-background: #e5e4e1;
+    --color-background: #141514;
+
+    --color-primary: #82a8ff;
+    --color-primary-container: #1d4ed8;
+    --color-on-primary: #002266;
+    --color-on-primary-container: #dbe1ff;
+    --color-primary-fixed: #253359;
+    --color-primary-fixed-dim: #1c2747;
+    --color-on-primary-fixed: #dbe1ff;
+    --color-on-primary-fixed-variant: #b4c5ff;
+    --color-inverse-primary: #004ac6;
+
+    --color-secondary: #9fa1a5;
+    --color-secondary-container: #333438;
+    --color-on-secondary: #141517;
+    --color-on-secondary-container: #d1cfd4;
+    --color-secondary-fixed: #35363a;
+    --color-secondary-fixed-dim: #292a2d;
+
+    --color-tertiary: #a4a4ad;
+    --color-tertiary-container: #3c3c44;
+    --color-on-tertiary: #16161a;
+    --color-on-tertiary-container: #e3e1ec;
+
+    --color-outline: #8c8f9f;
+    --color-outline-variant: #434655;
+
+    --color-inverse-surface: #f4f3f1;
+    --color-inverse-on-surface: #1a1c1a;
+  }
+}
+
+@theme {
+  --color-surface: var(--color-surface);
+  --color-surface-bright: var(--color-surface-bright);
+  --color-surface-dim: var(--color-surface-dim);
+  --color-surface-container-lowest: var(--color-surface-container-lowest);
+  --color-surface-container-low: var(--color-surface-container-low);
+  --color-surface-container: var(--color-surface-container);
+  --color-surface-container-high: var(--color-surface-container-high);
+  --color-surface-container-highest: var(--color-surface-container-highest);
+  --color-surface-variant: var(--color-surface-variant);
+
+  --color-on-surface: var(--color-on-surface);
+  --color-on-surface-variant: var(--color-on-surface-variant);
+  --color-on-background: var(--color-on-background);
+  --color-background: var(--color-background);
+
+  --color-primary: var(--color-primary);
+  --color-primary-container: var(--color-primary-container);
+  --color-on-primary: var(--color-on-primary);
+  --color-on-primary-container: var(--color-on-primary-container);
+  --color-primary-fixed: var(--color-primary-fixed);
+  --color-primary-fixed-dim: var(--color-primary-fixed-dim);
+  --color-on-primary-fixed: var(--color-on-primary-fixed);
+  --color-on-primary-fixed-variant: var(--color-on-primary-fixed-variant);
+  --color-inverse-primary: var(--color-inverse-primary);
+
+  --color-secondary: var(--color-secondary);
+  --color-secondary-container: var(--color-secondary-container);
+  --color-on-secondary: var(--color-on-secondary);
+  --color-on-secondary-container: var(--color-on-secondary-container);
+  --color-secondary-fixed: var(--color-secondary-fixed);
+  --color-secondary-fixed-dim: var(--color-secondary-fixed-dim);
+  --color-on-secondary-fixed: var(--color-on-secondary-fixed);
+  --color-on-secondary-fixed-variant: var(--color-on-secondary-fixed-variant);
+
+  --color-tertiary: var(--color-tertiary);
+  --color-tertiary-container: var(--color-tertiary-container);
+  --color-on-tertiary: var(--color-on-tertiary);
+  --color-on-tertiary-container: var(--color-on-tertiary-container);
+  --color-tertiary-fixed: var(--color-tertiary-fixed);
+  --color-tertiary-fixed-dim: var(--color-tertiary-fixed-dim);
+  --color-on-tertiary-fixed: var(--color-on-tertiary-fixed);
+  --color-on-tertiary-fixed-variant: var(--color-on-tertiary-fixed-variant);
+
+  --color-outline: var(--color-outline);
+  --color-outline-variant: var(--color-outline-variant);
+
+  --color-error: var(--color-error);
+  --color-error-container: var(--color-error-container);
+  --color-on-error: var(--color-on-error);
+  --color-on-error-container: var(--color-on-error-container);
+
+  --color-inverse-surface: var(--color-inverse-surface);
+  --color-inverse-on-surface: var(--color-inverse-on-surface);
+
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, monospace;
+}
+
+/* Custom serene aesthetic helpers */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
